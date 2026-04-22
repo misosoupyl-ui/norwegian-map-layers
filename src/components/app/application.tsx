@@ -48,20 +48,20 @@ export function Application() {
 
   // refererer til hover.ts
   const [visibility, setVisibility] = useState({
-    kommune: true,
-    stateProtected: true,
-    fiskehavner: true,
-    friluft: true,
-    hummer: true,
+    Kommuner: true,
+    Statsbeskyttet_områder: true,
+    Fiskehavner: true,
+    Friluftsområder: true,
+    Hummerområder_beskyttet: true,
     Fartsrestriksjoner: true,
   });
 
   const layerConfig = [
-    { key: "kommune", layer: kommuneLayer },
-    { key: "stateProtected", layer: stateProtectedAreasLayer },
-    { key: "fiskehavner", layer: fiskehavnerLayer },
-    { key: "friluft", layer: friluftLayer },
-    { key: "hummer", layer: hummerLayer },
+    { key: "Kommuner", layer: kommuneLayer },
+    { key: "Statsbeskyttet_områder", layer: stateProtectedAreasLayer },
+    { key: "Fiskehavner", layer: fiskehavnerLayer },
+    { key: "Friluftsområder", layer: friluftLayer },
+    { key: "Hummerområder_beskyttet", layer: hummerLayer },
     { key: "Fartsrestriksjoner", layer: fartrestLayer },
   ];
 
@@ -74,12 +74,11 @@ export function Application() {
   );
 
   const layers = [
+    hummerLayer,
     kommuneLayer,
     stateProtectedAreasLayer,
     friluftLayer,
-    hummerLayer,
     fartrestLayer,
-    fiskehavnerLayer,
   ];
 
   useEffect(() => {
@@ -94,7 +93,7 @@ export function Application() {
 
     attachClick({
       map,
-      layers: clickableLayers,
+      layers: [...clickableLayers, fiskehavnerLayer],
       overlay,
       setSelectedFeature,
     });
