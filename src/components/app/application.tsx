@@ -8,6 +8,7 @@ import { useGeographic } from "ol/proj.js";
 import {overviewMapControl} from "../map/mapOverviewConfig.js";
 import {defaults as defaultControls} from 'ol/control/defaults.js';
 
+import { LayerToggle } from "../ui/LayerToggle.js";
 
 import "ol/ol.css";
 
@@ -16,14 +17,13 @@ import {fiskehavnerLayer} from "../layers/fiskehavner/fiskehavner.js";
 import {friluftLayer} from "../layers/friluft/friluft.js";
 import {hummerLayer} from "../layers/hummer/hummer.js";
 import {kommuneLayer} from "../layers/kommune/kommune.js";
-import {nedgravdeContainereLayer} from "../layers/nedgravdeContainere/nedgravdeContainere.js";
 import { attachClick } from "../layers/interactions/click.js";
 import {fartrestLayer} from "../layers/fartRestrikt/fartrestrikt.js";
+import { attachHover } from "../layers/interactions/hover.js";
 
 import "./application.css";
 
 useGeographic();
-
 
 
 const map = new Map({
@@ -35,7 +35,6 @@ const map = new Map({
     fiskehavnerLayer,
     friluftLayer,
     hummerLayer,
-    nedgravdeContainereLayer,
     fartrestLayer,
   ],
 });
@@ -46,6 +45,24 @@ export function Application() {
 
   const [selectedFeature, setSelectedFeature] =
       useState<FeatureLike | null>(null);
+
+  // refererer til hover.ts
+  const [visibility, setVisibility] = useState({
+    kommune: true,
+    stateProtected: true,
+    fiskehavner: true,
+    friluft: true,
+    hummer: true,
+    //fartrestiksjon
+  });
+
+  const layerConfig = [
+    { key: "kommune", layer: kommuneLayer },
+    { key: "stateProtected", layer: stateProtectedAreasLayer },
+    { key: "fiskehavner", layer: fiskehavnerLayer },
+    { key: "friluft", layer: friluftLayer },
+    { key: "hummer", layer: hummerLayer },
+  ];
 
   const overlay = useMemo(
       () =>
@@ -58,18 +75,18 @@ export function Application() {
   const layers = [
     kommuneLayer,
     stateProtectedAreasLayer,
-    fiskehavnerLayer,
     friluftLayer,
     hummerLayer,
-    nedgravdeContainereLayer,
+    fartrestLayer,
   ];
-
 
   useEffect(() => {
     map.setTarget(mapRef.current!);
 
     overlay.setElement(overlayRef.current!);
     map.addOverlay(overlay);
+
+    attachHover(map, layers);
 
     const clickableLayers = layers.filter((l) => l.get("clickable"));
 
@@ -85,9 +102,21 @@ export function Application() {
     };
   }, []);
 
+  //toggle funksjon
+  useEffect(() => {
+    layerConfig.forEach(({ key, layer }) => {
+      layer.setVisible(visibility[key as keyof typeof visibility]);
+    });
+  }, [visibility]);
+
   return (
       <>
         <div ref={mapRef} style={{ width: "100%", height: "100vh" }} />
+
+        <LayerToggle
+            visibility={visibility}
+            setVisibility={setVisibility}
+        />
 
         <div ref={overlayRef} className="overlay">
           {selectedFeature && (
