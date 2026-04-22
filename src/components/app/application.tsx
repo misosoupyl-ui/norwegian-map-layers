@@ -53,7 +53,7 @@ export function Application() {
     fiskehavner: true,
     friluft: true,
     hummer: true,
-    //fartrestiksjon
+    Fartsrestriksjoner: true,
   });
 
   const layerConfig = [
@@ -62,6 +62,7 @@ export function Application() {
     { key: "fiskehavner", layer: fiskehavnerLayer },
     { key: "friluft", layer: friluftLayer },
     { key: "hummer", layer: hummerLayer },
+    { key: "Fartsrestriksjoner", layer: fartrestLayer },
   ];
 
   const overlay = useMemo(
@@ -78,6 +79,7 @@ export function Application() {
     friluftLayer,
     hummerLayer,
     fartrestLayer,
+    fiskehavnerLayer,
   ];
 
   useEffect(() => {
