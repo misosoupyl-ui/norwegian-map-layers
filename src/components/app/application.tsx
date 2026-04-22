@@ -5,6 +5,9 @@ import { OSM } from "ol/source.js";
 import Overlay from "ol/Overlay.js";
 import type { FeatureLike } from "ol/Feature.js";
 import { useGeographic } from "ol/proj.js";
+import {overviewMapControl} from "../map/mapOverviewConfig.js";
+import {defaults as defaultControls} from 'ol/control/defaults.js';
+
 
 import "ol/ol.css";
 
@@ -22,6 +25,7 @@ import "./application.css";
 useGeographic();
 
 const map = new Map({
+  controls: defaultControls().extend([overviewMapControl]),
   view: new View({ center: [11, 60], zoom: 8 }),
   layers: [new TileLayer({ source: new OSM() }),
     kommuneLayer,
