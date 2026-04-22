@@ -8,7 +8,10 @@ import CircleStyle from "ol/style/Circle.js";
 export const fiskehavnerLayer = new VectorLayer({
     source: new VectorSource({
         url: "/geojson/fiskehavner.geojson",
-        format: new GeoJSON(),
+        format: new GeoJSON({
+            dataProjection: "EPSG:32633",
+            featureProjection: "EPSG:4326"
+        }),
     }),
     style: new Style({
         image: new CircleStyle({
@@ -17,5 +20,8 @@ export const fiskehavnerLayer = new VectorLayer({
             stroke: new Stroke({ color: "white", width: 1 }),
         }),
     }),
-    properties: { name: "Fiskehavner" },
+    properties: {
+        name: "Fiskehavner",
+    clickable: true,
+    },
 })
