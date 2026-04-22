@@ -7,7 +7,7 @@ import CircleStyle from "ol/style/Circle.js";
 
 export const nedgravdeContainereLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/geojson/nedgravdeContainere.geojson",
+        url: "/geojson/nedgravdeContainere.json",
         format: new GeoJSON(),
     }),
     style: new Style({
