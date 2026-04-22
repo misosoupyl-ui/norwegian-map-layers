@@ -6,7 +6,7 @@ import GeoJSON from "ol/format/GEOJSON.js";
 
 export const fartrestLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/geojson/fartrest_innsjo_elv.geojson",
+        url: "/geojson/fartrestriksjon.geojson",
         format: new GeoJSON(),
     }),
     style: new Style({
