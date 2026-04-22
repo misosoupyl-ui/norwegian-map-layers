@@ -15,6 +15,7 @@ import {hummerLayer} from "../layers/hummer/hummer.js";
 import {kommuneLayer} from "../layers/kommune/kommune.js";
 import {nedgravdeContainereLayer} from "../layers/nedgravdeContainere/nedgravdeContainere.js";
 import { attachClick } from "../layers/interactions/click.js";
+import {fartrestLayer} from "../layers/fartRestrikt/fartrestrikt.js";
 
 useGeographic();
 
@@ -27,6 +28,7 @@ const map = new Map({
     friluftLayer,
     hummerLayer,
     nedgravdeContainereLayer,
+    fartrestLayer,
   ],
 });
 
