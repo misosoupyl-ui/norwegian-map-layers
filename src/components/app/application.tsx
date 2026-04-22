@@ -24,6 +24,8 @@ import "./application.css";
 
 useGeographic();
 
+
+
 const map = new Map({
   controls: defaultControls().extend([overviewMapControl]),
   view: new View({ center: [11, 60], zoom: 8 }),
