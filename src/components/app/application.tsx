@@ -17,6 +17,8 @@ import {nedgravdeContainereLayer} from "../layers/nedgravdeContainere/nedgravdeC
 import { attachClick } from "../layers/interactions/click.js";
 import {fartrestLayer} from "../layers/fartRestrikt/fartrestrikt.js";
 
+import "./application.css";
+
 useGeographic();
 
 const map = new Map({
