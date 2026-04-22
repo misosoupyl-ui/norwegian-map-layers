@@ -7,11 +7,10 @@ import { Style, Stroke, Fill } from "ol/style.js";
 function activeStyle(feature: FeatureLike) {
     return new Style({
         stroke: new Stroke({
-            color: "#086C26",
             width: 3,
         }),
         fill: new Fill({
-            color: "rgba(200,150,15,0.1)",
+            color: "rgba(0, 58, 255, 0.2)",
         }),
     });
 }
@@ -30,7 +29,7 @@ export function attachHover(map: Map, layers: VectorLayer[]) {
             if (layers.includes(layer as VectorLayer)) {
                 (feature as any).setStyle(activeStyle(feature));
                 hoveredFeature = feature;
-                return true; // stopp ved første treff
+                return true;
             }
         });
     });

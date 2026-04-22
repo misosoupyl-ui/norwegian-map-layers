@@ -10,8 +10,8 @@ export const kommuneLayer = new VectorLayer({
         format: new GeoJSON(),
     }),
     style: new Style({
-        fill: new Fill({ color: "rgba(255, 255, 0, 0.2)" }),
-        stroke: new Stroke({ color: "red", width: 2 }),
+        fill: new Fill({ color: "rgba(0, 60, 255, 0)" }),
+        stroke: new Stroke({ color: "blue", width: 2 }),
     }),
     properties: { name: "Kommuner" },
 })
