@@ -11,6 +11,7 @@ import {fiskehavnerLayer} from "../layers/fiskehavner/fiskehavner.js";
 import {friluftLayer} from "../layers/friluft/friluft.js";
 import {hummerLayer} from "../layers/hummer/hummer.js";
 import {kommuneLayer} from "../layers/kommune/kommune.js";
+import {nedgravdeContainereLayer} from "../layers/nedgravdeContainere/nedgravdeContainere.js";
 
 useGeographic();
 
@@ -22,6 +23,7 @@ const map = new Map({
     fiskehavnerLayer,
     friluftLayer,
     hummerLayer,
+    nedgravdeContainereLayer,
   ],
 });
 
