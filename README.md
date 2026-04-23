@@ -4,20 +4,19 @@ LINK TO DEPLOYED WEBSITE: [legg inn lenke her]
 
 # Kartbasert Webapplikasjon - KWS2100
 
-This application map is built with React and OpenLayers. The map will display geographical information about Norway with different nature information like:
-
+This application is an interactive map, built with React and OpenLayers. The map displays geographical and environmental data across Norway, which includes:
 - Fishing harbours
 - Speed restrictions on lakes and rivers
 - Protected outdoor recreation zones
 - State secured outdoor recreation areas
 - Municipals
-- Lobster conervation areas
+- Lobster conservation areas
 
 Users can toggle on/off the different data sources, and switch to different background maps.
 
 ## Features
-- [x] Switch between different Tile Layers
-- [x] Clik on the points to see properties (fishing harbours and their data)
+- [x] User can switch between different Tile Layers
+- [x] User can click on the points to see properties (fishing harbours and their data)
 - [x] Hover over municipality to see the their property name
 - [x] Toggle on/off all the datasources
 
@@ -37,7 +36,7 @@ Users can toggle on/off the different data sources, and switch to different back
 - [x] Your code is structured to make it easy to find the code corresponding to each data source and in order to make it easy to add more features  
 
 ***COMMENT:***  
-We have created a structured and clean project where we have good naming, functions and map structure.
+The project is structured and organized in code with clear naming, and well defined functions, making it easy to navigate and extend code if wanted. The application intergrates six different data sources, both with polygon and points.
 
 - [x] You can click on a feature to display an Overlay with properties of the features  
 - [x] You display an Overview map. This has not been covered by in the lectures, but is well is a well documented feature in OpenLayers  
