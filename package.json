@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kristiania-kws2100-2026/kws2100-exam-Ayanaro/issues"
   },
-  "homepage": "https://github.com/kristiania-kws2100-2026/kws2100-exam-Ayanaro#readme",
+  "homepage": "https://github.com/kristiania-kws2100-2026/kws2100-exam-Ayanaro",
   "devDependencies": {
     "@types/proj4": "^2.5.6",
     "@types/react": "^19.2.14",
