@@ -15,7 +15,7 @@ Users can toggle on/off the different data sources and switch background maps.
 
 ## Features
 - [x] Switch between different tile layers
-- [x] Clik on the points to see properties
+- [x] Clik on the points to see properties (fishing harbours and their data)
 - [x] Hover over municipality to see the property name
 - [x] Toggle on/off datasources
 
@@ -42,9 +42,9 @@ We have created a structured and clean project where we have good naming, functi
 
 ## Data sources
 
-- Fiskehavn: https://kartkatalog.geonorge.no/metadata/fiskerihavner/fabfe189-06b5-4a3f-84ba-3c48b02ce6de 
+- Fiskehavner: https://kartkatalog.geonorge.no/metadata/fiskerihavner/fabfe189-06b5-4a3f-84ba-3c48b02ce6de 
 - Fart restriksjoner: https://www.kystinfo.no/ 
 - Friluftsområder: https://lovdata.no/dokument/LF/forskrift/2013-10-04-1173
 - Fristat: http://www.miljodirektoratet.no/naturbase
 - Kommuner: https://data.geonorge.no/sosi/inndelinger/inndelingsbase/kommuner
-- Hummer: https://www.fiskeridir.no/Fritidsfiske/Artar/Hummarfiske/Fredings-og-bevaringsomraade
+- Hummerområder: https://www.fiskeridir.no/Fritidsfiske/Artar/Hummarfiske/Fredings-og-bevaringsomraade
