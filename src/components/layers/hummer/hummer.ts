@@ -3,11 +3,11 @@ import VectorLayer from "ol/layer/Vector.js";
 import VectorSource from "ol/source/Vector.js";
 import { Fill, Style } from "ol/style.js";
 import Stroke from "ol/style/Stroke.js";
-import GeoJSON from "ol/format/GEOJSON.js";
+import GeoJSON from "ol/format/GeoJSON.js";
 
 export const hummerLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/geojson/hummer.geojson",
+        url: "/kws2100-exam-Ayanaro/geojson/hummer.geojson",
         format: new GeoJSON(),
     }),
     style: new Style({

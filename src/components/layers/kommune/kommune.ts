@@ -6,7 +6,7 @@ import GeoJSON from "ol/format/GeoJSON.js";
 
 export const kommuneLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/geojson/kommune.geojson",
+        url: "/kws2100-exam-Ayanaro/geojson/kommune.geojson",
         format: new GeoJSON(),
     }),
     style: new Style({
