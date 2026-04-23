@@ -52,3 +52,9 @@ The project is structured and organized in code with clear naming, and well defi
 - Friluftslivsområder - statlig sikra: https://kartkatalog.geonorge.no/metadata/friluftslivsomraader-statlig-sikra/e08ad2cb-3262-4a78-bc58-2f3b5c5ccfd2
 - Kommuner: https://data.geonorge.no/sosi/inndelinger/inndelingsbase/kommuner
 - Hummer - fredningsområder: https://kartkatalog.geonorge.no/metadata/hummer-fredningsomraader/8901e1f8-b947-4f7d-819c-bf11e3e16a68
+
+## Collaboration
+
+This project was developed in collaboration.
+We worked together in the same room, where we coded and pushed commits both 
+individually on separate computers and together on a single computer.
