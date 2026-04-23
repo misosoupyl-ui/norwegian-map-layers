@@ -6,7 +6,7 @@ import proj4 from "proj4";
 import {register} from "ol/proj/proj4.js";
 
 
-export const arcticLayer = new TileLayer({});
+export const arcticLayer = new TileLayer({ visible: false});
 const arcticUrl = "/wmts/arctic-sdi.xml";
 
 
