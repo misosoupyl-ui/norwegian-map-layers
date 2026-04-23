@@ -1,3 +1,5 @@
-export default ({
-    base: "/kws2100-exam-ayanaro",
+import { defineConfig } from "vite";
+
+export default defineConfig({
+    base: "/kws2100-exam-Ayanaro",
 });
