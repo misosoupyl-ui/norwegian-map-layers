@@ -5,7 +5,7 @@ import { Fill, Style } from "ol/style.js";
 import Stroke from "ol/style/Stroke.js";
 
 export const stateProtectedAreasSoruce = new VectorSource({
-  url: "/kws2100-exam-Ayanaro/geojson/FriStatsikraGEOJSON.json",
+  url: `/geojson/FriStatsikraGEOJSON.json`,
   format: new GeoJSON(),
 });
 
