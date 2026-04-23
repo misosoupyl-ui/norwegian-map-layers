@@ -12,6 +12,7 @@ type Props = {
 export function LayerToggle({ visibility, setVisibility, osmLayer, satellittLayer }: Props) {
     return (
         <div className="toggle">
+            <h3>Bakgrunnskart</h3>
             <div>
                 <button onClick={() => {
                     osmLayer.setVisible(true);
