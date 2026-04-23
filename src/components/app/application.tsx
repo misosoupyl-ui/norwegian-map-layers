@@ -61,8 +61,8 @@ export function Application() {
     Kommuner: false,
     Statsbeskyttet_områder: false,
     Fiskehavner: false,
-    Friluftsområder: false,
-    Hummerområder_beskyttet: false,
+    Friluftsområder_vernede: false,
+    Hummerområder_fredet: false,
     Fartsrestriksjoner: false,
   });
 
@@ -70,8 +70,8 @@ export function Application() {
     { key: "Kommuner", layer: kommuneLayer },
     { key: "Statsbeskyttet_områder", layer: stateProtectedAreasLayer },
     { key: "Fiskehavner", layer: fiskehavnerLayer },
-    { key: "Friluftsområder", layer: friluftLayer },
-    { key: "Hummerområder_beskyttet", layer: hummerLayer },
+    { key: "Friluftsområder_vernede", layer: friluftLayer },
+    { key: "Hummerområder_fredet", layer: hummerLayer },
     { key: "Fartsrestriksjoner", layer: fartrestLayer },
   ];
 
