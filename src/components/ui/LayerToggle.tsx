@@ -32,11 +32,12 @@ export function LayerToggle({ visibility, setVisibility, osmLayer, satellittLaye
                     osmLayer.setVisible(false);
                     satellittLayer.setVisible(false);
                     arcticLayer.setVisible(true);
-                }}>Arctic Layer
+                }}>Arktis
                 </button>
 
             </div>
             <hr/>
+            <h3>Datalag</h3>
             {Object.entries(visibility).map(([key, value]) => (
                 <label key={key}>
                     <input
