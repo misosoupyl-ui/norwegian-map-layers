@@ -11,7 +11,12 @@ export const kommuneLayer = new VectorLayer({
     }),
     style: new Style({
         fill: new Fill({ color: "rgba(0, 60, 255, 0)" }),
-        stroke: new Stroke({ color: "blue", width: 2 }),
+        stroke: new Stroke({ color: "green", width: 2 }),
     }),
-    properties: { name: "Kommuner" },
+    properties: {
+        name: "Kommuner",
+        showName: true,
+        nameKey: "kommunenavn",
+        hoverColor: "rgba(0, 60, 255, 0.15)"
+    },
 })
