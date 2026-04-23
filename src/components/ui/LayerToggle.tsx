@@ -12,6 +12,11 @@ type Props = {
 };
 
 export function LayerToggle({ visibility, setVisibility, osmLayer, satellittLayer }: Props) {
+
+    const formatName = (name: string) =>
+        name
+            .replace(/_/g, " ");
+
     return (
         <div className="toggle">
             <h3>Bakgrunnskart</h3>
@@ -50,7 +55,7 @@ export function LayerToggle({ visibility, setVisibility, osmLayer, satellittLaye
                             }))
                         }
                     />
-                    {key}
+                    {formatName(key)}
                 </label>
             ))}
         </div>
