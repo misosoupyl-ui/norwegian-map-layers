@@ -55,12 +55,12 @@ export function Application() {
 
   // refererer til hover.ts
   const [visibility, setVisibility] = useState({
-    Kommuner: true,
-    Statsbeskyttet_områder: true,
-    Fiskehavner: true,
-    Friluftsområder: true,
-    Hummerområder_beskyttet: true,
-    Fartsrestriksjoner: true,
+    Kommuner: false,
+    Statsbeskyttet_områder: false,
+    Fiskehavner: false,
+    Friluftsområder: false,
+    Hummerområder_beskyttet: false,
+    Fartsrestriksjoner: false,
   });
 
   const layerConfig = [
