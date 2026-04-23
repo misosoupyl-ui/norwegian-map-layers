@@ -28,7 +28,8 @@ useGeographic();
 const osmLayer = new TileLayer({ source: new OSM() });
 const satellittLayer = new TileLayer({ source: new XYZ({
     url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-  })
+  }),
+  visible: false,
 });
 
 const map = new Map({
