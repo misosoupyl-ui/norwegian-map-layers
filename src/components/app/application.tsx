@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile.js";
-import { OSM } from "ol/source.js";
+import {OSM, XYZ} from "ol/source.js";
 import Overlay from "ol/Overlay.js";
 import type { FeatureLike } from "ol/Feature.js";
 import { useGeographic } from "ol/proj.js";
@@ -25,11 +25,18 @@ import "./application.css";
 
 useGeographic();
 
+const osmLayer = new TileLayer({ source: new OSM() });
+const satellittLayer = new TileLayer({ source: new XYZ({
+    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+  })
+});
 
 const map = new Map({
   controls: defaultControls().extend([overviewMapControl]),
   view: new View({ center: [11, 60], zoom: 8 }),
-  layers: [new TileLayer({ source: new OSM() }),
+  layers: [
+    osmLayer,
+    satellittLayer,
     kommuneLayer,
     stateProtectedAreasLayer,
     fiskehavnerLayer,
@@ -117,6 +124,8 @@ export function Application() {
         <LayerToggle
             visibility={visibility}
             setVisibility={setVisibility}
+            osmLayer={osmLayer}
+            satellittLayer={satellittLayer}
         />
 
         <div ref={overlayRef} className="overlay">
