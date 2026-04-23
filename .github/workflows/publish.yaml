@@ -1,5 +1,7 @@
 name: Deploy Pages
 
+
+
 on:
   push:
     branches: [main, lectures/*, reference/*]
@@ -7,9 +9,10 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with: { node-version: 22.x, cache: "npm" }
       - run: npm ci
       - run: npm run build
@@ -17,6 +20,5 @@ jobs:
         with: { path: "./dist" }
       - uses: actions/deploy-pages@v4
 
-permissions:
   id-token: write
   pages: write
