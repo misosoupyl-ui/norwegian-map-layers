@@ -1,4 +1,4 @@
-import GeoJSON from "ol/format/GEOJSON.js";
+import GeoJSON from "ol/format/GeoJSON.js";
 import VectorLayer from "ol/layer/Vector.js";
 import VectorSource from "ol/source/Vector.js";
 import { Fill, Style } from "ol/style.js";

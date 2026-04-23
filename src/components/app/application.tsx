@@ -68,10 +68,10 @@ export function Application() {
 
   const layerConfig = [
     { key: "Kommuner", layer: kommuneLayer },
-    { key: "Statsbeskyttet_områder", layer: stateProtectedAreasLayer },
+    { key: "Statlig_sikret_områder", layer: stateProtectedAreasLayer },
     { key: "Fiskehavner", layer: fiskehavnerLayer },
-    { key: "Friluftsområder_vernede", layer: friluftLayer },
-    { key: "Hummerområder_fredet", layer: hummerLayer },
+    { key: "Vernede_friluftsområder", layer: friluftLayer },
+    { key: "Fredet_hummerområder", layer: hummerLayer },
     { key: "Fartsrestriksjoner", layer: fartrestLayer },
   ];
 
