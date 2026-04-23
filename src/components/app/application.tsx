@@ -7,6 +7,7 @@ import type { FeatureLike } from "ol/Feature.js";
 import { useGeographic } from "ol/proj.js";
 import {overviewMapControl} from "../map/mapOverviewConfig.js";
 import {defaults as defaultControls} from 'ol/control/defaults.js';
+import { arcticLayer } from "../map/arcticMap.js";
 
 import { LayerToggle } from "../ui/LayerToggle.js";
 
@@ -38,6 +39,7 @@ const map = new Map({
   layers: [
     osmLayer,
     satellittLayer,
+      arcticLayer,
     kommuneLayer,
     stateProtectedAreasLayer,
     fiskehavnerLayer,
@@ -127,6 +129,7 @@ export function Application() {
             setVisibility={setVisibility}
             osmLayer={osmLayer}
             satellittLayer={satellittLayer}
+            arcticLayer={arcticLayer}
         />
 
         <div ref={overlayRef} className="overlay">
