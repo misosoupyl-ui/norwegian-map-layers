@@ -46,7 +46,7 @@ The project is structured and organized in code with clear naming, and well defi
   Make sure to zoom in, in order to see the smaller full names of kommuner.
 
 ## Chosen Feature
-- [x] Include more tha one option for background map, inclduing a polar projection map. https://arctic-sdi.org/services/topografic-basemap/ would be most appropriate (note: as covered in lecutre 4, there is a problem with this site that requires you to download a copy of the features XML file into your project)
+- [x] Include more than one option for background map, inclduing a polar projection map. https://arctic-sdi.org/services/topografic-basemap/ would be most appropriate (note: as covered in lecture 4, there is a problem with this site that requires you to download a copy of the features XML file into your project)
 
 ## Data sources
 
