@@ -7,7 +7,7 @@ import CircleStyle from "ol/style/Circle.js";
 
 export const fiskehavnerLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/kws2100-exam-Ayanaro/geojson/fiskehavner.geojson",
+        url: `/geojson/fiskehavner.geojson`,
         format: new GeoJSON({
             dataProjection: "EPSG:32633",
             featureProjection: "EPSG:4326"

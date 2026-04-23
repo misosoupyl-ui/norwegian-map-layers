@@ -7,7 +7,7 @@ import {register} from "ol/proj/proj4.js";
 
 
 export const arcticLayer = new TileLayer({ visible: false});
-const arcticUrl = "/kws2100-exam-Ayanaro/wmts/arctic-sdi.xml";
+const arcticUrl = `/wmts/arctic-sdi.xml`;
 
 
 //Converts xml file to js object.

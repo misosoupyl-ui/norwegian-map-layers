@@ -6,7 +6,7 @@ import GeoJSON from "ol/format/GeoJSON.js";
 
 export const friluftLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/kws2100-exam-Ayanaro/geojson/Friluftsomrader.json",
+        url: `/geojson/Friluftsomrader.json`,
         format: new GeoJSON(),
     }),
     style: new Style({

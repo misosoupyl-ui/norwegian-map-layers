@@ -6,7 +6,7 @@ import GeoJSON from "ol/format/GeoJSON.js";
 
 export const fartrestLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/kws2100-exam-Ayanaro/geojson/fartrestriksjon.geojson",
+        url: `/geojson/fartrestriksjon.geojson`,
         format: new GeoJSON(),
     }),
     style: new Style({

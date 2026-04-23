@@ -7,7 +7,7 @@ import GeoJSON from "ol/format/GeoJSON.js";
 
 export const hummerLayer = new VectorLayer({
     source: new VectorSource({
-        url: "/kws2100-exam-Ayanaro/geojson/hummer.geojson",
+        url: `/geojson/hummer.geojson`,
         format: new GeoJSON(),
     }),
     style: new Style({
