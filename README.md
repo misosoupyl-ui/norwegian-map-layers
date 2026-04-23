@@ -39,7 +39,10 @@ Users can toggle on/off the different data sources, and switch to different back
 The project is structured and organized in code with clear naming, and well defined functions, making it easy to navigate and extend code if wanted. The application intergrates six different data sources, both with polygon and points.
 
 - [x] You can click on a feature to display an Overlay with properties of the features  
-- [x] You display an Overview map. This has not been covered by in the lectures, but is well is a well documented feature in OpenLayers  
+- [x] You display an Overview map. This has not been covered by in the lectures, but is well is a well documented feature in OpenLayers
+
+## Chosen Feature
+- [x] Include more tha one option for background map, inclduing a polar projection map. https://arctic-sdi.org/services/topografic-basemap/ would be most appropriate (note: as covered in lecutre 4, there is a problem with this site that requires you to download a copy of the features XML file into your project)
 
 ## Data sources
 
@@ -49,8 +52,9 @@ The project is structured and organized in code with clear naming, and well defi
   
 ***NOTE:***
   The outdoor areas (Friluftslivsområdet) datasourse only covers the Oslo region, only available at the time of development.
+  Make sure to zoom in, in order to see the smaller full names of kommuner.
 - Friluftslivsområder - statlig sikra: https://kartkatalog.geonorge.no/metadata/friluftslivsomraader-statlig-sikra/e08ad2cb-3262-4a78-bc58-2f3b5c5ccfd2
-- Kommuner: https://data.geonorge.no/sosi/inndelinger/inndelingsbase/kommuner
+- Kommuner: https://data.geonorge.no/sosi/inndelinger/inndelingsbase/kommuner 
 - Hummer - fredningsområder: https://kartkatalog.geonorge.no/metadata/hummer-fredningsomraader/8901e1f8-b947-4f7d-819c-bf11e3e16a68
 
 ## Collaboration
