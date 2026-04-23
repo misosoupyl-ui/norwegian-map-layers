@@ -1,6 +1,7 @@
 URL REPOSITORY: https://github.com/kristiania-kws2100-2026/kws2100-exam-Ayanaro.git
 
-LINK TO DEPLOYED WEBSITE: https://kws2100-exam-ayanaro-1-vo04.onrender.com/ 
+LINK TO DEPLOYED WEBSITE: https://kws2100-exam-ayanaro-1-vo04.onrender.com/   
+
 ***IMPORTANT INFO***
 We have chosen to use Render.com to deploy our website. Once the website loades, it will take a minute to load in the different data sources on the map. Toggle all the data sources on to ensure that you will see them.
 
