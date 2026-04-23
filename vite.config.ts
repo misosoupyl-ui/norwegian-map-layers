@@ -1,3 +1,3 @@
 export default {
-    base: "/kws2100-exam-Ayanaro",
+    base: "/kws2100-exam-Ayanaro/",
 };
