@@ -23,18 +23,9 @@ Users can toggle on/off the different data sources, and switch to different back
 - [x] Hover over municipality to see the their property name
 - [x] Toggle on/off all the datasources
 
-## Features for grades
-
-### E:
-- [x] If you deploy a React application that displays a map with OpenLayers on GitHub pages, you will pass. If you fail to deploy correctly, but your code indicates that you could have achieved a C, you will also pass.
-
-### D:
+## Features 
 - [x] Your map must contain some vector data and some interaction
-
-### C:
 - [x] The interactions, data sources or styling is beyond what was expected for the assignment. You need to display at least 4 data sources that was not used in the lectures or assignment with at least two types of geometries (point, linestring, polygon)
-
-### B:
 - [x] You can display both polygon and point geometries from at least 6 data sources  
 - [x] Your code is structured to make it easy to find the code corresponding to each data source and in order to make it easy to add more features  
 
